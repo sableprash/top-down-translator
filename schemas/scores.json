@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "communication_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "faithfulness_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+          "meaning_changed": { "type": "boolean" }
+        },
+        "required": ["id", "communication_score", "faithfulness_score", "meaning_changed"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["scores"],
+  "additionalProperties": false
+}

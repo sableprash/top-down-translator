@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "faithfulness_score": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "meaning_changed": { "type": "boolean" }
+  },
+  "required": ["faithfulness_score", "meaning_changed"],
+  "additionalProperties": false
+}

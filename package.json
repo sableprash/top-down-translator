@@ -1,0 +1,12 @@
+{
+  "name": "top-down-translator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "translate": "node src/translate.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
