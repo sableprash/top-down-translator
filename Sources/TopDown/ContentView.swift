@@ -1,3 +1,4 @@
+import AppKit
 import SwiftUI
 
 struct ContentView: View {
@@ -98,6 +99,13 @@ struct ContentView: View {
                 Image(systemName: model.apiKeyConfigured ? "gearshape" : "key.fill")
             }
             .help("Settings")
+            Button {
+                NSApp.terminate(nil)
+            } label: {
+                Image(systemName: "power")
+            }
+            .keyboardShortcut("q", modifiers: .command)
+            .help("Quit TopDown")
         }
     }
 
