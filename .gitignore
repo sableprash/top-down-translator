@@ -2,3 +2,7 @@ corpus/
 results/raw/
 *.jsonl
 .env
+.build/
+dist/
+.swiftpm/
+.DS_Store

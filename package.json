@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "translate": "node src/translate.mjs",
-    "test": "node --test"
+    "test": "node --test && scripts/test-swift.sh",
+    "build:mac": "scripts/build-app.sh"
   },
   "engines": {
     "node": ">=20"
